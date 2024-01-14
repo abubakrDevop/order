@@ -31,13 +31,24 @@ function sendData(event) {
 }
 
 function fetchData() {
-    fetch('')
+    const data = {
+		input1: input1.value,
+		input2: input2.value
+    };
+
+    fetch('Твой Api', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(data)
+    })
         .then(response => response.json())
-        .then(data => {
-            console.log(data);
+        .then(responseData => {
+	    	console.log(responseData);
         })
         .catch(error => {
-            console.error('Error:', error);
+		    console.error('Error:', error);
         });
 }
 
