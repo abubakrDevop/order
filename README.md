@@ -1,14 +1,6 @@
-# order
-# Достаточно вставить свой API и все будет работать
-function fetchData() {
-    fetch('')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-}
+## RBC | https://www.rbcroyalbank.com/personal.html
 
-# Адаптивность есть
+- ЛК
+- Канада | Английский
+
+## Проверктки
